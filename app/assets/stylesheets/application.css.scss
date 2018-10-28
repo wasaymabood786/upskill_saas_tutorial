@@ -35,9 +35,14 @@ h1, h2, h3 {
     background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-//Get rid of the tiny white line below the navbar
+//Nav Styles
 .navbar {
     border: none;
+}
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
 }
 
 /*The comma (,) allows you to group CSS together*/
