@@ -58,6 +58,19 @@ h1, h2, h3 {
     }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #00c6ff;
+    }
+}
+
+
+
 //Home Page Styles
 .home-callout {
     color: white;
@@ -65,3 +78,4 @@ h1, h2, h3 {
     padding-top: 50px;
     padding-bottom: 100px;
 }
+
