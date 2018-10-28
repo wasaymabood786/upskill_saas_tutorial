@@ -34,6 +34,28 @@ h1, h2, h3 {
     border: none;
 }
 
+//Make navbar-brand text white
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+//Make about text white
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+//Set the hover css for the navbar brand
+.navbar-default .navbar-brand:hover {
+    color: white;
+    opacity: 0.75;
+}
+
+//Set the hover css for links in the navbar
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    opacity: 0.75;
+}
+
 .home-callout {
     color: white;
     margin-top: -20px;
