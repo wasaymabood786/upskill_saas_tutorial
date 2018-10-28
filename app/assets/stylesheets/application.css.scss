@@ -17,6 +17,7 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Typography Styles
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
@@ -34,28 +35,20 @@ h1, h2, h3 {
     border: none;
 }
 
-//Make navbar-brand text white
-.navbar-default .navbar-brand {
-    color: white;
-}
+/*The comma (,) allows you to group CSS together*/
 
-//Make about text white
+//Make navbar-brand and navbar link text white
+//Also include the css for hovering by using SASS(SCSS)
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
     color: white;
+    &:hover {
+        color: white;
+        opacity: 0.75;
+    }
 }
 
-//Set the hover css for the navbar brand
-.navbar-default .navbar-brand:hover {
-    color: white;
-    opacity: 0.75;
-}
-
-//Set the hover css for links in the navbar
-.navbar-default .navbar-nav > li > a:hover {
-    color: white;
-    opacity: 0.75;
-}
-
+//Home Page Styles
 .home-callout {
     color: white;
     margin-top: -20px;
