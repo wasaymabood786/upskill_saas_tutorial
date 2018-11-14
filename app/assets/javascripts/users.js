@@ -2,7 +2,7 @@
 //Document ready.
   $(document).on('turbolinks:load', function(){
   var proForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup-btn');
   //Set Stripe Public Key.
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content'));
   //When user clicks form submit button.
@@ -63,7 +63,8 @@
     var token = response.id;
     
     //Inject the card token into a hidden field in the pro form.
-    proForm.append( $('#<input type="hidden" name="user[stripe_card_token]">').val(token) );
+    proForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
+    
     //Submit form to Rails app.
     proForm.get(0).submit();
   }
