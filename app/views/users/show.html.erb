@@ -5,7 +5,13 @@
     </div>
     
     <div class="col-md-6">
-      <h1><%= @user.profile.first_name %> <%= @user.profile.last_name %></h1>
+      <h1>
+        <%= @user.profile.first_name %> <%= @user.profile.last_name %>
+        <% if @user.plan.id == 2 %>
+          <span class="label label-danger">PRO</span>
+        <% end %>  
+      </h1>
+      
       <h3><span class="job-title-icon"><%= job_title_icon %></span><%= @user.profile.job_title %></h3>
       <div class="well profile-block profile-description">
         <h3>Description</h3>
@@ -14,7 +20,7 @@
       <% if current_user.plan_id == 2 %>
         <div class="well profile-block profile-contact-info">
           <h3>Contact Information</h3>
-          <%= @user.profile.phone_number %>
+            <h5>Phone Number <%= @user.profile.phone_number %></h5>
           <%= @user.profile.contact_email %>
         </div>
       <% end %>
